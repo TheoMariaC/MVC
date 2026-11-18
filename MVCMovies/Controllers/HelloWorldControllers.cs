@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace MVCMovies.Controllers;
 public class HelloWorldController:Controller
 {
-    public string Index() {
-        return "This is my default action...";
+    public IActionResult Index(){
+        return View();
     }
-    public string Welcome(){
-        return "This is the Welcome action method...";
+
+    public IActionResult Welcome(){
+        return View();
     }
+    
 }
